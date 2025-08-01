@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/* Soft Pastel Theme */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(145deg, #e1b382, #c89666); /* sand tan + shadow */
+  color: #12343b;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(to right, #e1b382, #c89666);
+  box-shadow: 0 0 20px #12343b70;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #2d545e;
+  font-weight: bold;
+  text-shadow: 0 0 8px #e1b382;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #2d545e;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #c89666;
+  text-shadow: 0 0 5px #12343b;
+}
+
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: radial-gradient(circle at center, #e1b382 20%, #c89666 100%);
+  color: #2d545e;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 10px #e1b382;
+}
+
+.search-box {
+  padding: 0.75rem;
+  width: 60%;
+  max-width: 500px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  background-color: #e1b382;
+  color: #12343b;
+  box-shadow: 0 0 10px #12343b80;
+}
+
+.restaurant-section {
+  padding: 2rem;
+}
+
+.restaurant-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #2d545e;
+  text-shadow: 0 0 5px #e1b382;
+}
+
+.restaurant-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.restaurant-card {
+  background: #ff9a3c;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #e1b382;
+  box-shadow: 0 0 15px #12343b40;
+  color: #2d545e;
+}
+
+.restaurant-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px #12343b80;
+}
+
+.restaurant-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 2px solid #2d545e;
+}
+
+.restaurant-info {
+  padding: 1rem;
+}
+
+.restaurant-name {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
+  color: #2d545e;
+  text-shadow: 0 0 4px #e1b382;
+}
+
+.restaurant-meta, .cusine-type {
+  font-size: 0.95rem;
+  color: #333;
+  margin: 0.3rem 0;
+}
+
+.rating, .delivery-time, .cusine-type {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.dot {
+  margin: 0 0.3rem;
+  color: #999;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background: #2d545e;
+  color: #e1b382;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 20px #c8966640;
+}
+
+/* Buttons */
+button, .btn-group a {
+  background: #ff6f3c;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+  background: #c89666;
+  color: #12343b;
+  box-shadow: 0 0 10px #12343b80;
+  margin: 0.5rem;
+  display: inline-block;
+}
+
+button:hover, .btn-group a:hover {
+  background: #2d545e;
+  color: #e1b382;
+  box-shadow: 0 0 15px #c89666;
+}
+
+/* Success Card */
+.success-card {
+  text-align: center;
+  padding: 4rem 2rem;
+  max-width: 600px;
+  margin: 5rem auto;
+  background: #e1b382;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #12343b40;
+  color: #2d545e;
+}
+
+.success-card h1 {
+  font-size: 2rem;
+  color: #2d545e;
+  text-shadow: 0 0 8px #e1b382;
+  margin-bottom: 1rem;
+}
+
+.success-card p {
+  font-size: 1.1rem;
+  color: #12343b;
+  margin-bottom: 2rem;
+}
+
+.form-box input[type="submit"]:hover {
+  background: linear-gradient(to right, #2d545e, #c89666); /* optionally override */
+}
+/* Custom Color Utility Classes */
+.first-color {
+  background: #2d545e;
+}
+
+.second-color {
+  background: #c89666;
+}
+
+.third-color {
+  background: #e1b382;
+}
+
+.fourth-color {
+  background: #12343b;
+}

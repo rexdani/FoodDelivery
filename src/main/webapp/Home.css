@@ -1,0 +1,226 @@
+@charset "UTF-8";
+/* Cart Badge in Navbar */
+.cart-badge {
+  display: inline-block;
+  min-width: 22px;
+  padding: 2px 7px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #ececec;
+  background: #385170;
+  border-radius: 12px;
+  margin-left: 4px;
+  vertical-align: top;
+  position: absolute;
+  top: -8px;
+  right: -28px;
+  box-shadow: 0 0 6px #9fd3c7;
+}
+/* Profile Photo in Navbar */
+.profile-photo {
+  margin-left: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+.profile-photo img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #385170;
+  background: #ececec;
+  object-fit: cover;
+  box-shadow: 0 0 8px #9fd3c7;
+}
+/* Premium Dark Gradient Blue Neon Theme */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #ececec;
+  color: #385170;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #142d4c;
+  box-shadow: 0 0 20px #9fd3c7;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: #9fd3c7;
+  font-weight: bold;
+  text-shadow: 0 0 10px #385170;
+}
+
+.nav-links a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #9fd3c7;
+  text-shadow: 0 0 8px #385170;
+}
+
+.hero {
+  padding: 4rem 2rem;
+  text-align: center;
+  background: #ececec;
+  color: #385170;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #142d4c;
+  text-shadow: 0 0 10px #9fd3c7;
+}
+
+.search-box {
+  padding: 0.75rem;
+  width: 60%;
+  max-width: 500px;
+  border-radius: 8px;
+  border: 1px solid #385170;
+  font-size: 1rem;
+  outline: none;
+  background-color: #ececec;
+  color: #385170;
+  box-shadow: 0 0 10px #9fd3c7;
+}
+
+.restaurant-section {
+  padding: 2rem;
+}
+
+.restaurant-section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #142d4c;
+  text-shadow: 0 0 8px #9fd3c7;
+}
+
+.restaurant-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.restaurant-card {
+  background: #9fd3c7;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 15px #38517033;
+  transition: transform 0.3s ease;
+  color: #385170;
+}
+
+.restaurant-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px #38517099;
+}
+
+.restaurant-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-bottom: 2px solid #385170;
+}
+
+.restaurant-info {
+  padding: 1rem;
+}
+
+.restaurant-name {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
+  color: #142d4c;
+  text-shadow: 0 0 5px #9fd3c7;
+}
+
+.restaurant-meta, .cusine-type {
+  font-size: 0.95rem;
+  color: #385170;
+  margin: 0.3rem 0;
+}
+
+.rating, .delivery-time, .cusine-type {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.dot {
+  margin: 0 0.3rem;
+  color: #142d4c;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  background: #142d4c;
+  color: #ececec;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 20px #38517033;
+}
+
+/* Buttons */
+button, .btn-group a {
+  background: #9fd3c7;
+  color: #142d4c;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.3s ease, color 0.3s ease;
+  box-shadow: 0 0 10px #38517080;
+  margin: 0.5rem;
+  display: inline-block;
+}
+
+button:hover, .btn-group a:hover {
+  background: #385170;
+  color: #ececec;
+  box-shadow: 0 0 15px #9fd3c7;
+}
+
+/* Success Card */
+.success-card {
+  text-align: center;
+  padding: 4rem 2rem;
+  max-width: 600px;
+  margin: 5rem auto;
+  background: #9fd3c7;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(56, 81, 112, 0.08);
+  color: #385170;
+}
+
+.success-card h1 {
+  font-size: 2rem;
+  color: #142d4c;
+  text-shadow: none;
+  margin-bottom: 1rem;
+}
+
+.success-card p {
+  font-size: 1.1rem;
+  color: #385170;
+  margin-bottom: 2rem;
+}
+.form-box input[type="submit"]:hover {
+  background: #142d4c;
+  color: #ececec;
+}

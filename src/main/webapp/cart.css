@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ececec;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #385170;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #9fd3c7;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(56, 81, 112, 0.08);
+}
+
+h1 {
+    text-align: center;
+    color: #142d4c;
+    margin-bottom: 30px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-bottom: 1px solid #385170;
+    padding: 15px 0;
+}
+
+.item-image img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.item-details h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+}
+
+.qty-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.qty-form button {
+    background: #9fd3c7;
+    color: #142d4c;
+    border: none;
+    padding: 5px 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.qty-form span.display-qty {
+    min-width: 30px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.remove-btn {
+    background: #385170;
+    color: #ececec;
+    padding: 7px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.total {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.checkout-btn {
+    background: #9fd3c7;
+    color: #142d4c;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-left: 10px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.empty {
+    text-align: center;
+    color: #385170;
+    font-size: 1.4rem;
+    margin-top: 50px;
+}

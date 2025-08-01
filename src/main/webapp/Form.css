@@ -1,0 +1,118 @@
+/* Full-width form group for file/image input */
+@charset "UTF-8";
+.form-group.full-width {
+  grid-column: 1 / -1;
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: #ececec;
+  color: #385170;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* Form Container */
+.form-container {
+  background: #9fd3c7;
+  border: 1px solid #385170;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(56, 81, 112, 0.08);
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Form Header */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #142d4c;
+  text-shadow: none;
+}
+
+/* Form Grid Layout */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+/* Form Groups */
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.full-width {
+  grid-column: span 2;
+}
+
+label {
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #385170;
+  text-shadow: none;
+}
+
+input,
+select {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #385170;
+  background-color: #ececec;
+  color: #385170;
+  font-size: 1rem;
+  box-shadow: none;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #142d4c;
+}
+
+/* Submit Button */
+.submit-btn {
+  margin-top: 30px;
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ececec;
+  background: #385170;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(56, 81, 112, 0.15);
+}
+
+.submit-btn:hover {
+  background: #142d4c;
+  transform: scale(1.05);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 600px) {
+  .form-group.full-width {
+    grid-column: span 1;
+  }
+}

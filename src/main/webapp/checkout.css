@@ -1,0 +1,119 @@
+@charset "UTF-8";
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #ececec;
+    margin: 0;
+    padding: 0;
+    color: #385170;
+}
+
+.checkout-container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+    background: #9fd3c7;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(56, 81, 112, 0.08);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #142d4c;
+    margin-bottom: 20px;
+}
+
+.checkout-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 25px;
+}
+
+.checkout-table th, .checkout-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #385170;
+}
+
+.checkout-table th {
+    background-color: #385170;
+    color: #ececec;
+}
+
+.checkout-table img {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.checkout-summary {
+    text-align: right;
+    font-size: 18px;
+    margin: 20px 0;
+    color: #385170;
+}
+
+.order-form {
+    margin-top: 20px;
+}
+
+.order-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #385170;
+}
+
+.order-form input[type="text"],
+.order-form input[type="tel"],
+.order-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #385170;
+    background: #ececec;
+    color: #385170;
+}
+
+.payment-options label {
+    display: block;
+    margin: 10px 0;
+    font-weight: normal;
+}
+
+.place-order-btn, .back-cart-btn {
+    padding: 10px 20px;
+    background: #385170;
+    color: #ececec;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s ease;
+    cursor: pointer;
+    margin: 10px 10px 0 0;
+    display: inline-block;
+}
+
+.back-cart-btn {
+    background: #142d4c;
+}
+
+.place-order-btn:hover {
+    background: #142d4c;
+    color: #ececec;
+}
+
+.back-cart-btn:hover {
+    background: #385170;
+    color: #ececec;
+}
+
+.empty-cart-msg {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 40px;
+    color: #385170;
+}
