@@ -7,8 +7,8 @@ public class db {
 	
 	
  static String url="jdbc:mysql://avnadmin@daniyal2004-rexdaniyal-a25b.b.aivencloud.com:23752/Swiggy";
- static String user="avnadmin";
- static String password="AVNS_xsJNPS3ob6PvDZhlVFF";
+ static String user="Your UserName";
+ static String password="Your Password";
   static Connection connection;
 
  public static Connection getCon() {
